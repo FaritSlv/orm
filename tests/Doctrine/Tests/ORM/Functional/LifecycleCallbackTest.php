@@ -415,6 +415,7 @@ DQL;
 /**
  * @Entity
  * @HasLifecycleCallbacks
+ * @Table(name="lc_cb_test_user")
  */
 class LifecycleCallbackTestUser
 {
@@ -641,6 +642,7 @@ class LifecycleListenerPreUpdate
 /**
  * @Entity
  * @HasLifecycleCallbacks
+ * @Table(name="lc_cb_ea_entity")
  */
 class LifecycleCallbackEventArgEntity
 {

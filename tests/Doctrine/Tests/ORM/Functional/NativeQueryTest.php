@@ -630,6 +630,7 @@ class NativeQueryTest extends OrmFunctionalTestCase
         $user->addPhonenumber($phone);
 
         $this->_em->clear();
+        $this->disableAutoCommit();
         $this->_em->persist($user);
         $this->_em->flush();
 
